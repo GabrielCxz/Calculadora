@@ -1,0 +1,99 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    user-select: none;
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    border-color: rgb(20, 20, 20);
+    border-style: solid;
+    border-radius: 5%;
+}
+
+.calculadora {
+    width: 450px;
+    height: 600px;
+    border-radius: 8px;
+}
+
+button {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    border-color: #00000000;
+    background-color: rgb(235, 235, 235);
+    border-style: solid;
+    border-color: rgb(20, 20, 20);
+    transition: filter 0.2s ease;
+}
+
+button:hover {
+    filter: brightness(80%);
+}
+
+.resultado {
+    color: rgb(20, 20, 20);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    margin-bottom: 15px;
+    margin-right: 43px;
+    text-align: end;
+    height: 80px;
+}
+
+.resultado2 {
+    color: rgb(20, 20, 20);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-top: 70px;
+    margin-right: 43px;
+    text-align: end;
+    height: 30px;
+}
+
+.bvermelho {
+    background-color: rgb(189, 23, 23);
+    color: rgb(214, 214, 214);
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body,
+    html {
+        background-color: rgb(31, 31, 31);
+    }
+
+    .container {
+        background-color: rgb(20, 20, 20);
+    }
+
+    button {
+        background-color: rgb(49, 49, 49);
+        color: rgb(214, 214, 214);
+    }
+
+    .bvermelho {
+        background-color: rgb(134, 16, 16);
+    }
+
+    .resultado,
+    .resultado2 {
+        color: rgb(214, 214, 214);
+    }
+
+    button:hover {
+        filter: brightness(50%);
+    }
+}
