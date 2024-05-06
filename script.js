@@ -129,19 +129,35 @@ function igual() {
         display2.innerText = "";
     }
     if (ultimo == "-") {
-        display.innerText = Number(display2.innerText) - Number(display.innerText);
+        var aux = Number(display2.innerText);
+        if (display2.innerText == "") {
+            aux = Number(display.innerText) * 2;
+        }
+        display.innerText = Number(aux) - Number(display.innerText);
         display2.innerText = "";
     }
     if (ultimo == "*") {
-        display.innerText = Number(display2.innerText) * Number(display.innerText);
+        var aux = Number(display2.innerText);
+        if (display2.innerText == "") {
+            aux = 1;
+        }
+        display.innerText = Number(aux) * Number(display.innerText);
         display2.innerText = "";
     }
     if (ultimo == "/") {
-        display.innerText = Number(display2.innerText) / Number(display.innerText);
+        var aux = Number(display2.innerText);
+        if (display2.innerText == "") {
+            aux = Number(display.innerText) ** 2;
+        }
+        display.innerText = Number(aux) / Number(display.innerText);
         display2.innerText = "";
     }
     if (ultimo == "%") {
-        display.innerText = Number(display.innerText) / 100 * Number(display2.innerText);
+        var aux = Number(display2.innerText);
+        if (display2.innerText == "") {
+            aux = 100;
+        }
+        display.innerText = Number(display.innerText) / 100 * Number(aux);
         display2.innerText = "";
     }
     if (display.innerText.length > 10) {
